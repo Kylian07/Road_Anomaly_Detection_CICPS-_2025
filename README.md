@@ -54,6 +54,18 @@ pip install -r requirements.txt
 # Download dataset (if not included)
 # Place RDD2022 dataset in data/ directory
 ```
+## Model Weights
+
+Due to GitHub's 25MB file size limit, the trained model weights are hosted externally.
+
+**Download:** [YOLOv8 Best Weights (best.pt)](https://drive.google.com/file/d/1aS8aMj1G33Cs3G9YPAfpda2VikRMTxhq/view?usp=sharing)
+
+### Quick Setup:
+```bash
+#Install gdown
+gdown https://drive.google.com/uc?id=1aS8aMj1G33Cs3G9YPAfpda2VikRMTxhq -O models/weights/best.pt
+gdown https://drive.google.com/uc?id=1Q_nWO8bW0HHb7X8AT3FiP7zutBgYxD4N -O models/weights/last.pt
+```
 
 ## Model Architecture
 
