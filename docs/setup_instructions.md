@@ -109,25 +109,24 @@ python src/utils.py
 python -c "from src.utils import validate_dataset_structure; validate_dataset_structure('data')"
 ```
 
-## Model Weights Setup
+## Model Weights
 
-### Download Pre-trained Weights
+Due to GitHub's 25MB file size limit, the trained model weights are hosted externally.
 
-Due to GitHub's file size limitations, download the trained model weights:
+**Download:** [YOLOv8 Best Weights (best.pt)](https://drive.google.com/file/d/1aS8aMj1G33Cs3G9YPAfpda2VikRMTxhq/view?usp=sharing)
+**Download:** [YOLOv8 last Weights (last.pt)](https://drive.google.com/file/d/1Q_nWO8bW0HHb7X8AT3FiP7zutBgYxD4N/view?usp=sharing)
 
+### Quick Setup:
 ```bash
-# Install gdown
+#Install gdown
 pip install gdown
 
-# Download model weights from Google Drive
-gdown YOUR_FILE_ID -O models/weights/best.pt
+#Download model weights
+gdown https://drive.google.com/uc?id=1aS8aMj1G33Cs3G9YPAfpda2VikRMTxhq -O models/weights/best.pt
+gdown https://drive.google.com/uc?id=1Q_nWO8bW0HHb7X8AT3FiP7zutBgYxD4N -O models/weights/last.pt
 
-# Or download manually from the provided link and place in models/weights/
+#Or download manually from the link above and place in models/weights/
 ```
-
-**Manual Download:**
-1. Download from: [Google Drive Link](YOUR_LINK)
-2. Place in: `models/weights/best.pt`
 
 ### Verify Model Weights
 
