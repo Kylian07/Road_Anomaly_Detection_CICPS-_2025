@@ -298,9 +298,6 @@ CREATE TABLE detections (
 - Mobile app for field deployment
 - Integration with municipal maintenance systems
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -308,25 +305,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **YOLOv8**: Ultralytics team
 - **CICPS 2026 Hackathon**: JUSense organizers
 
-## Citation
 
-If you use this code in your research, please cite:
-
-```bibtex
-@misc{road_anomaly_detection_2025,
-  title={Road Anomaly Detection using YOLOv8},
-  author={Your Name},
-  year={2025},
-  publisher={GitHub},
-  url={https://github.com/yourusername/road-anomaly-detection}
-}
-```
 
 ## Contact
 
 For questions or collaborations:
-- **Email**: your.email@example.com
+- **Email**: rajdeeppal167@gmail.com
 - **GitHub**: [@yourusername](https://github.com/yourusername)
 
 ---
-**CICPS 2026 Hackathon Submission - Team [Your Team Name]**
+**CICPS 2026 Hackathon Submission - Team CodeFuse**
