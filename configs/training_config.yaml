@@ -1,0 +1,123 @@
+# YOLOv8 Road Damage Detection - Training Configuration
+
+# Model Configuration
+model:
+  name: yolov8m.pt
+  architecture: YOLOv8-Medium
+  pretrained: true
+
+# Dataset Configuration
+data:
+  path: /kaggle/working/rdd2022_yolo
+  yaml: data/rdd2022.yaml
+  nc: 4
+  names:
+    - D00_Longitudinal_Crack
+    - D10_Transverse_Crack
+    - D20_Alligator_Crack
+    - D40_Pothole
+
+# Training Hyperparameters
+training:
+  epochs: 20  # Recommended: 100-150 for production
+  batch_size: 8
+  image_size: 640
+  device: 0  # GPU device (0 for first GPU, 'cpu' for CPU)
+  workers: 4
+  patience: 30  # Early stopping patience
+  cache: false  # Cache images for faster training
+
+  # Optimizer Settings
+  optimizer: AdamW
+  lr0: 0.0001  # Initial learning rate
+  lrf: 0.0001  # Final learning rate (lr0 * lrf)
+  momentum: 0.9
+  weight_decay: 0.0001
+
+  # Warmup Settings
+  warmup_epochs: 5
+  warmup_momentum: 0.9
+  warmup_bias_lr: 0.001
+
+# Data Augmentation
+augmentation:
+  augment: true
+  mosaic: 0.8  # Mosaic augmentation probability
+  mixup: 0.0  # Mixup augmentation probability
+  copy_paste: 0.0  # Copy-paste augmentation probability
+
+  # Geometric Augmentations
+  degrees: 5  # Rotation degrees (+/- deg)
+  translate: 0.05  # Translation (+/- fraction)
+  scale: 0.3  # Scale (+/- gain)
+  shear: 0.0  # Shear (+/- deg)
+  perspective: 0.0  # Perspective (+/- fraction)
+
+  # Flip Augmentations
+  flipud: 0.3  # Vertical flip probability
+  fliplr: 0.3  # Horizontal flip probability
+
+  # Color Augmentations
+  hsv_h: 0.01  # HSV-Hue augmentation (fraction)
+  hsv_s: 0.3  # HSV-Saturation augmentation (fraction)
+  hsv_v: 0.2  # HSV-Value augmentation (fraction)
+
+# Loss Configuration
+loss:
+  box: 5.0  # Box loss gain
+  cls: 0.3  # Class loss gain
+  dfl: 1.0  # DFL loss gain
+
+# Inference Configuration
+inference:
+  conf_threshold: 0.3  # Confidence threshold
+  iou_threshold: 0.5  # IoU threshold for NMS
+  max_det: 300  # Maximum detections per image
+  agnostic_nms: false  # Class-agnostic NMS
+
+# Validation Configuration
+validation:
+  val_interval: 1  # Validation every N epochs
+  save_best: true
+  save_last: true
+  save_period: -1  # Save checkpoint every N epochs (-1 to disable)
+
+# Output Configuration
+output:
+  project: /kaggle/working/output
+  name: yolov8m_rdd2022
+  exist_ok: false
+  plots: true  # Generate training plots
+  verbose: true  # Verbose output
+
+# Class-Specific Configuration (Optional)
+class_weights:
+  # Adjust loss weights per class if dealing with class imbalance
+  D00_Longitudinal_Crack: 1.0
+  D10_Transverse_Crack: 1.0
+  D20_Alligator_Crack: 1.0
+  D40_Pothole: 1.0
+
+# Advanced Settings
+advanced:
+  multi_scale: false  # Multi-scale training
+  overlap_mask: true  # Overlap mask for instance segmentation
+  mask_ratio: 4  # Mask downsample ratio
+  dropout: 0.0  # Dropout rate
+  amp: true  # Automatic Mixed Precision training
+  fraction: 1.0  # Dataset fraction to train on
+
+# Recommended Production Settings
+production:
+  epochs: 100  # More epochs for better convergence
+  batch_size: 16  # Larger batch if GPU allows
+  lr0: 0.001  # Higher learning rate
+  mosaic: 1.0  # Full mosaic augmentation
+  patience: 50  # More patience for early stopping
+
+# Notes:
+# - Adjust batch_size based on GPU memory
+# - For better accuracy, increase epochs to 100-150
+# - Use lr0=0.001 for faster convergence
+# - Set mosaic=1.0 for stronger augmentation
+# - Monitor validation metrics to avoid overfitting
