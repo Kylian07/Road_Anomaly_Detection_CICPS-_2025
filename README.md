@@ -59,6 +59,7 @@ pip install -r requirements.txt
 Due to GitHub's 25MB file size limit, the trained model weights are hosted externally.
 
 **Download:** [YOLOv8 Best Weights (best.pt)](https://drive.google.com/file/d/1aS8aMj1G33Cs3G9YPAfpda2VikRMTxhq/view?usp=sharing)
+**Download:** [YOLOv8 last Weights (last.pt)](https://drive.google.com/file/d/1Q_nWO8bW0HHb7X8AT3FiP7zutBgYxD4N/view?usp=sharing)
 
 ### Quick Setup:
 ```bash
