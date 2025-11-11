@@ -1,0 +1,7 @@
+path: /kaggle/input/rdd-2022/RDD_SPLIT
+train: train/images
+val: val/images
+test: test/images
+
+nc: 4
+names: ['D00_Longitudinal_Crack', 'D10_Transverse_Crack', 'D20_Alligator_Crack', 'D40_Pothole']
