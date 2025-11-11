@@ -1,0 +1,70 @@
+{
+  "overall": {
+    "mAP@0.5": 0.0000,
+    "mAP@0.5:0.95": 0.0000,
+    "precision": 0.0000,
+    "recall": 0.0000,
+    "f1_score": 0.0000
+  },
+  "per_class": {
+    "D00_Longitudinal_Crack": {
+      "precision": 0.0000,
+      "recall": 0.0000,
+      "mAP@0.5": 0.0000,
+      "mAP@0.5:0.95": 0.0000,
+      "f1_score": 0.0000
+    },
+    "D10_Transverse_Crack": {
+      "precision": 0.0000,
+      "recall": 0.0000,
+      "mAP@0.5": 0.0000,
+      "mAP@0.5:0.95": 0.0000,
+      "f1_score": 0.0000
+    },
+    "D20_Alligator_Crack": {
+      "precision": 0.0000,
+      "recall": 0.0000,
+      "mAP@0.5": 0.0000,
+      "mAP@0.5:0.95": 0.0000,
+      "f1_score": 0.0000
+    },
+    "D40_Pothole": {
+      "precision": 0.0000,
+      "recall": 0.0000,
+      "mAP@0.5": 0.0000,
+      "mAP@0.5:0.95": 0.0000,
+      "f1_score": 0.0000
+    }
+  },
+  "training_info": {
+    "model": "YOLOv8-Medium",
+    "epochs_trained": 20,
+    "batch_size": 8,
+    "image_size": 640,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "dataset": "RDD2022",
+    "num_classes": 4,
+    "training_time_hours": 0.0,
+    "gpu_used": "CUDA Device 0"
+  },
+  "inference_speed": {
+    "preprocess_ms": 0.0,
+    "inference_ms": 0.0,
+    "postprocess_ms": 0.0,
+    "total_ms": 0.0,
+    "fps": 0.0
+  },
+  "dataset_statistics": {
+    "train_images": 0,
+    "val_images": 0,
+    "test_images": 0,
+    "total_annotations": 0
+  },
+  "notes": [
+    "Replace all 0.0000 values with actual metrics after training",
+    "Per-class metrics help identify which damage types need improvement",
+    "F1-score provides balanced measure of precision and recall",
+    "Inference speed metrics help evaluate real-time performance"
+  ]
+}
