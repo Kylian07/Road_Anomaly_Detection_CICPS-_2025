@@ -64,6 +64,9 @@ Due to GitHub's 25MB file size limit, the trained model weights are hosted exter
 ### Quick Setup:
 ```bash
 #Install gdown
+pip install gdown
+
+#Download model weights
 gdown https://drive.google.com/uc?id=1aS8aMj1G33Cs3G9YPAfpda2VikRMTxhq -O models/weights/best.pt
 gdown https://drive.google.com/uc?id=1Q_nWO8bW0HHb7X8AT3FiP7zutBgYxD4N -O models/weights/last.pt
 
