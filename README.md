@@ -302,7 +302,7 @@ CREATE TABLE detections (
 
 For questions or collaborations:
 - **Email**: rajdeeppal167@gmail.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **GitHub**: [@Kylian07](https://github.com/Kylian07)
 
 ---
 **CICPS 2026 Hackathon Submission - Team CodeFuse**
