@@ -45,8 +45,8 @@ For detailed dataset information, see [data/README.md](data/README.md)
 ### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/road-anomaly-detection.git
-cd road-anomaly-detection
+git clone https://github.com/Kylian07/Road_Anomaly_Detection_CICPS-_2025.git
+cd Road_Anomaly_Detection_CICPS-_2025
 
 # Install dependencies
 pip install -r requirements.txt
