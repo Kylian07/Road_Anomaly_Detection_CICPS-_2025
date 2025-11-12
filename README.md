@@ -22,7 +22,7 @@ Real-time road damage detection system using YOLOv8 on the RDD2022 dataset for i
 ## Dataset
 
 ### RDD2022 (Road Damage Dataset 2022)
-- **Source**: [RDD2022 Official Dataset](https://rdd2022.sekilab.global/)
+- **Source**: [RDD2022 Official Dataset](https://www.kaggle.com/datasets/aliabdelmenam/rdd-2022)
 - **Classes**: 4 road damage types
   - D00: Longitudinal Crack
   - D10: Transverse Crack
