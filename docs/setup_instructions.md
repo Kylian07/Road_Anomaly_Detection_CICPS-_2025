@@ -23,8 +23,8 @@ Complete guide for setting up and running the Road Anomaly Detection system usin
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/road-anomaly-detection.git
-cd road-anomaly-detection
+git clone https://github.com/Kylian07/Road_Anomaly_Detection_CICPS-_2025.git
+cd Road_Anomaly_Detection_CICPS-_2025
 ```
 
 ### 2. Create Virtual Environment
@@ -61,14 +61,7 @@ python -c "from ultralytics import YOLO; print('YOLOv8 installed successfully')"
 ```
 
 ## Dataset Setup
-
-### Option 1: Download RDD2022 Dataset
-
-1. Visit the official website: https://rdd2022.sekilab.global/
-2. Register and download the dataset
-3. Extract the dataset to the `data/` directory
-
-### Option 2: Use Kaggle Dataset
+### Use Kaggle Dataset
 
 ```bash
 # Install Kaggle API
@@ -80,8 +73,8 @@ cp kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
 
 # Download dataset (replace with actual dataset name)
-kaggle datasets download -d [rdd2022-dataset-name]
-unzip [dataset-name].zip -d data/
+kaggle datasets download -d RDD-2022
+unzip RDD-2022.zip -d data/
 ```
 
 ### Dataset Structure
