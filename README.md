@@ -137,22 +137,13 @@ python src/train.py --data data/rdd2022.yaml --epochs 20 --batch 8 --device 0
 
 | Metric | Value |
 |--------|-------|
-| mAP@0.5 | 0.XXXX |
-| mAP@0.5:0.95 | 0.XXXX |
-| Precision | 0.XXXX |
-| Recall | 0.XXXX |
-| F1-Score | 0.XXXX |
+| mAP@0.5 | 0.6682 |
+| mAP@0.5:0.95 | 0.3709 |
+| Precision | 0.6848 |
+| Recall | 0.6192 |
+| F1-Score | 0.6503  |
 
-*Note: Replace with actual values after training*
 
-### Per-Class Performance
-
-| Class | Precision | Recall | mAP@0.5 |
-|-------|-----------|--------|---------|
-| D00 Longitudinal Crack | 0.XXX | 0.XXX | 0.XXX |
-| D10 Transverse Crack | 0.XXX | 0.XXX | 0.XXX |
-| D20 Alligator Crack | 0.XXX | 0.XXX | 0.XXX |
-| D40 Pothole | 0.XXX | 0.XXX | 0.XXX |
 
 ### Sample Detections
 See results/sample_detections/ for detection examples
