@@ -159,7 +159,7 @@ ls -lh models/weights/best.pt
 
 ```python
 !pip install gdown
-!gdown YOUR_FILE_ID -O models/weights/best.pt
+!gdown 1aS8aMj1G33Cs3G9YPAfpda2VikRMTxhq -O models/weights/best.pt
 ```
 
 ## Google Colab Setup
