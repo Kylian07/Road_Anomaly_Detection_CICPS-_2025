@@ -303,5 +303,7 @@ For questions or collaborations:
 - **Email**: rajdeeppal167@gmail.com
 - **GitHub**: [@Kylian07](https://github.com/Kylian07)
 
+- **Email**: ayansanki2004@gmail.com
+- **GitHub**: [@Ayansanki](https://github.com/Ayansanki)
 ---
 **CICPS 2026 Hackathon Submission - Team CodeFuse**
