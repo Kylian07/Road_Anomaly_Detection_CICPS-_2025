@@ -210,7 +210,6 @@ for result in results:
 ```
 road-anomaly-detection/
 ├── README.md                  # Main documentation
-├── LICENSE                    # MIT License
 ├── requirements.txt           # Python dependencies
 ├── data/
 │   ├── rdd2022.yaml          # YOLO dataset configuration
