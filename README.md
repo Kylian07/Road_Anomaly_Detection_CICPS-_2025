@@ -126,7 +126,7 @@ Class Loss Weight: 0.3
 DFL Loss Weight: 1.0
 ```
 
-### Training Command
+### Training Command (To be executed in Kaggle bash)
 ```bash
 python src/train.py --data data/rdd2022.yaml --epochs 20 --batch 8 --device 0
 ```
@@ -153,7 +153,7 @@ See results/plots/ for training metrics visualization
 
 ## Usage
 
-### Training
+### Training (To be executed in Kaggle bash)
 ```bash
 # Train from scratch
 python src/train.py --data data/rdd2022.yaml --epochs 20 --batch 8
@@ -162,7 +162,7 @@ python src/train.py --data data/rdd2022.yaml --epochs 20 --batch 8
 python src/train.py --data data/rdd2022.yaml --resume --weights models/weights/last.pt
 ```
 
-### Validation
+### Validation (To be executed in Kaggle bash)
 ```bash
 # Validate trained model
 python src/validate.py --weights models/weights/best.pt --data data/rdd2022.yaml
