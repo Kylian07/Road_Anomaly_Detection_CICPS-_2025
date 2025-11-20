@@ -140,7 +140,7 @@ ls -lh models/weights/best.pt
 
 ```python
 # In Kaggle notebook
-!git clone https://github.com/yourusername/road-anomaly-detection.git
+!git clone https://github.com/Kylian07/Road_Anomaly_Detection_CICPS-_2025.git
 %cd road-anomaly-detection
 ```
 
@@ -172,7 +172,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 # Clone repository
-!git clone https://github.com/yourusername/road-anomaly-detection.git
+!git clone https://github.com/Kylian07/Road_Anomaly_Detection_CICPS-_2025.git
 %cd road-anomaly-detection
 
 # Install dependencies
@@ -188,7 +188,7 @@ drive.mount('/content/drive')
 ```python
 # Download model weights
 !pip install gdown
-!gdown YOUR_FILE_ID -O models/weights/best.pt
+!gdown 1aS8aMj1G33Cs3G9YPAfpda2VikRMTxhq -O models/weights/best.pt
 
 # Upload dataset or link from Google Drive
 ```
