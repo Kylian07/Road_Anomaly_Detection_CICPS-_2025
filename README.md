@@ -153,21 +153,6 @@ See results/plots/ for training metrics visualization
 
 ## Usage
 
-### Training (To be executed in Kaggle bash)
-```bash
-# Train from scratch
-python src/train.py --data data/rdd2022.yaml --epochs 20 --batch 8
-
-# Resume training
-python src/train.py --data data/rdd2022.yaml --resume --weights models/weights/last.pt
-```
-
-### Validation (To be executed in Kaggle bash)
-```bash
-# Validate trained model
-python src/validate.py --weights models/weights/best.pt --data data/rdd2022.yaml
-```
-
 ### Inference
 
 #### Single Image
@@ -184,6 +169,23 @@ python src/inference.py --weights models/weights/best.pt --source test_images/ -
 ```bash
 python src/inference.py --weights models/weights/best.pt --source video.mp4 --save-db
 ```
+
+### Training (To be executed in Kaggle bash)
+```bash
+# Train from scratch
+python src/train.py --data data/rdd2022.yaml --epochs 20 --batch 8
+
+# Resume training
+python src/train.py --data data/rdd2022.yaml --resume --weights models/weights/last.pt
+```
+
+### Validation (To be executed in Kaggle bash)
+```bash
+# Validate trained model
+python src/validate.py --weights models/weights/best.pt --data data/rdd2022.yaml
+```
+
+
 
 ### Using the Trained Model in Python
 ```python
@@ -225,8 +227,6 @@ road-anomaly-detection/
 │       └── last.pt           # Last epoch checkpoint
 ├── configs/
 │   └── training_config.yaml  # Training configuration
-├── notebooks/
-│   └── exploratory_analysis.ipynb  # Data exploration
 ├── results/
 │   ├── metrics.json          # Performance metrics
 │   ├── plots/                # Training curves and visualizations
