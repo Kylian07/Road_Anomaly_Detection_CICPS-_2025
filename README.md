@@ -16,7 +16,6 @@ Real-time road damage detection system using YOLOv8 on the RDD2022 dataset for i
 - [Project Structure](#project-structure)
 - [Database Schema](#database-schema)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Dataset
@@ -76,6 +75,10 @@ gdown https://drive.google.com/uc?id=1Q_nWO8bW0HHb7X8AT3FiP7zutBgYxD4N -O models
 ## Model Architecture
 
 **Model**: YOLOv8-Medium (yolov8m.pt)
+
+<p align="center">
+  <img src="assets/yolov8m.png" alt="Model Architecture" width="600"/>
+</p>
 
 ### Key Features
 - **Backbone**: CSPDarknet with C2f modules
@@ -212,6 +215,7 @@ for result in results:
 ```
 road-anomaly-detection/
 ├── README.md                  # Main documentation
+├── assests                    # images
 ├── requirements.txt           # Python dependencies
 ├── data/
 │   ├── rdd2022.yaml          # YOLO dataset configuration
