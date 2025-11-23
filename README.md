@@ -237,6 +237,7 @@ road-anomaly-detection/
 │   └── sample_detections/    # Sample detection images
 └── docs/
     └── setup_instructions.md # Detailed setup guide
+    └── Technical_Summary_CodeFuse.pdf
 ```
 
 ## Database Schema
